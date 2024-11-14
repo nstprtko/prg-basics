@@ -1,12 +1,12 @@
-def f(number):
-    
-    number_str = str(number)
-    sum = 0
-    for char in number_str :
-        if char == char :
-            char_int = int(char)
-            sum =+ char_int
+def f(number):# ask for one argument
+# when we want to count something or have a sum, we initiate variable to which we will write this count to    
+    number_str = str(number)# convert to string to be able to run for 
+    sum = 0# inititate count
+    for char in number_str :# check every character 
+        if char == char : # try to find repeated characters
+            char_int = int(char) # if found, convert them to int to be able to run sum
+            sum =+ char_int # write sum of those numbers to the variable
 
     return sum
 
-print(f(1027))
+print(f(2055))
