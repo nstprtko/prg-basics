@@ -13,7 +13,8 @@ with open(file_name, "r") as file:
         count_lines +=1
         stripped_line = line.replace(" ", "").replace("\n", "")
         count_characters +=len(stripped_line)
-        count_words = len(file_content.split())
+        
+    count_words = len(file_content.split())
 
 
     print(f"Number of lines :{count_lines}")
