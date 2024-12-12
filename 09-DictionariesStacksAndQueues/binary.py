@@ -1,9 +1,9 @@
-import queue
+import queue # import queue module
 
 def decimal_to_bin(number):
-    stack = queue.LifoQueue()
+    stack = queue.LifoQueue() # say that this value is a stacl LifoQueue
 
-    while number > 0:
+    while number > 0: # as
         remainder = number % 2
         stack.put(remainder)
         number //=2
