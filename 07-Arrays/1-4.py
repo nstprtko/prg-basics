@@ -13,7 +13,8 @@ print('sum of the first and the last', arr[0] + arr[-1])
 
 middle_index = len(arr) // 2
 
-print('middle value',middle_index)
+print('middle value',arr[middle_index])
 
 for element in arr:
     print (element, end = ' ')
+    

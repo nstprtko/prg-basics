@@ -4,11 +4,12 @@ computer_games = [
    "Elden Ring", "Apex Legends", "Call of Duty: Warzone"
 ]
 index = 0
-for c in computer_games:
-    print(c)
+for game in computer_games:
+    print(game)
+
 computer_games_sorted = sorted(computer_games)
 
-for i in computer_games_sorted:
+for game in computer_games_sorted:
     index += 1
-    print(f'{index}. {i}')
+    print(f'{index}. {game}')
 
