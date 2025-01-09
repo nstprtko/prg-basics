@@ -9,7 +9,7 @@ class BankAccount:
     
     def deposit(self, amount):
         self.amount = amount
-        self.balance += self.amount
+        self.balance += round(self.amount,1)
         
 
     def withdraw(self, amount):
@@ -17,8 +17,8 @@ class BankAccount:
         if self.balance < self.amount:
             print('Insufficient funds on the account')
         else:
-            self.balance -= self.amount
-            print(f"You've withdrawed {self.amount}. Your balance is {self.balance} ")
+            self.balance -= round(self.amount,1)
+            print(f"You've withdrawed {self.amount}. Your balance is {round(self.balance,1)} ")
 
     
         
